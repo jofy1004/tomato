@@ -14,4 +14,10 @@ public class MainController {
     public String login(HttpServletRequest request, HttpServletResponse response) {
         return "login";
     }
+
+    @RequestMapping(value = "/", method = RequestMethod.GET)
+    public String index(HttpServletRequest request, HttpServletResponse response) {
+        return "/public/index";
+    }
+
 }

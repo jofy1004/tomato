@@ -62,7 +62,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
      */
     @Override
     protected void configure(HttpSecurity http) throws Exception {
-        http.authorizeRequests()
+        /*http.authorizeRequests()
                 .antMatchers("/login", "/css/**", "/fonts/**", "/images/**", "/favicon.ico").permitAll() // 设置所有人都可以访问登录页面
                 .anyRequest().authenticated() // 任何请求,登录后可以访问
                 .and()
@@ -76,7 +76,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .deleteCookies("JSESSIONID")
                 .logoutSuccessHandler(logoutSuccessHandler()) //登出后，失效session，重定向到login页面
                 .and()
-                .csrf().disable();// 关闭csrf防护
+                .csrf().disable();// 关闭csrf防护*/
+        http.authorizeRequests().antMatchers("/").permitAll();
     }
 
     /**
