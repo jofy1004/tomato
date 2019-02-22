@@ -17,7 +17,7 @@ public class MainController {
 
     @RequestMapping(value = "/", method = RequestMethod.GET)
     public String index(HttpServletRequest request, HttpServletResponse response) {
-        return "/public/index";
+        return "index";
     }
 
 }

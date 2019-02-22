@@ -23,3 +23,7 @@
 /dist/
 /nbdist/
 /.nb-gradle/
+
+### Vue ###
+/tomato-web/node_modules/
+/tomato-web/dist/

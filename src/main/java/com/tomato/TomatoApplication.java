@@ -14,10 +14,9 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @SpringBootApplication
 @EnableTransactionManagement
 @EnableScheduling
-@EnableAutoConfiguration(exclude={DataSourceAutoConfiguration.class})
+@EnableAutoConfiguration(exclude = {DataSourceAutoConfiguration.class})
 @PropertySources({
-        @PropertySource("classpath:config/jdbc.dev.properties"),
-        @PropertySource("classpath:application.properties")
+        @PropertySource("classpath:application.yml")
 })
 public class TomatoApplication extends SpringBootServletInitializer {
     @Override
